@@ -1,0 +1,24 @@
+#include <iostream>
+
+int nr_elemente, sir[50], i, maxim, minim;
+using namespace std;
+
+int main()
+{
+    cout<<"Numarul elemntelor este ";
+    cin>>nr_elemente;
+    for(i=1;i<=nr_elemente;i++)
+    {    cout<<"Introduceti un element al sirului: ";
+         cin>>sir[i];}
+    maxim=sir[1];
+    for(i=1;i<=nr_elemente;i++)
+        if(sir[i]>maxim)
+           maxim=sir[i];
+    cout<<"Elemntul maxim este: "<<maxim<<endl;
+    minim=sir[1];
+    for(i=1;i<=nr_elemente;i++)
+         if(sir[i]<minim)
+            minim=sir[i];
+    cout<<"Elementul minim este: "<<minim;
+    return 0;
+}

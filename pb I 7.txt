@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int numar,divizor,contor;
+int main()
+{    cout<<"Introduceti un numar: ";
+     cin>>numar;
+     for(divizor=2;divizor<=numar/2;divizor++)
+          if(numar%divizor==0)
+                 contor++;
+     if(contor==0)
+          cout<<"Numarul "<<numar<<" este prim"<<endl;
+     else
+          cout<<"Numarul "<<numar<<" nu este prim"<<endl;
+return 0;
+}

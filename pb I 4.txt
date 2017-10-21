@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+int nr_studenti, note[50], i, student_trecut, procent_studenti_peste8, student_sub8;
+int main()
+{
+    cout<<"Introduceti nr de studenti: ";
+    cin>>nr_studenti;
+    for(i=1;i<=nr_studenti;i++)
+    {
+       cout<<"Introduceti nota pt elev: ";
+       cin>>note[i];
+    }
+     student_trecut=0;
+     for(i=1;i<=nr_studenti;i++)
+        if(note[i]>= 5)
+           student_trecut++;
+        else cout<<"a) NU toti studentii au trecut!"<<endl<<endl;
+    if (student_trecut==nr_studenti)
+             cout<<"a) Toti studentii au trecut!"<<endl<<endl;
+
+    student_sub8=0;
+    for(i=1;i<=nr_studenti;i++)
+        if(note[i]<8)
+           student_sub8++;
+    if(student_sub8==0)
+        cout<<"Nu sunt studenti sub nota 8!"<<endl;
+    else
+        { procent_studenti_peste8= (student_sub8*100)/nr_studenti;
+          cout<<"b) Procentul studentilor cu nota sub 8 este "<<procent_studenti_peste8<<"%"<<endl;
+        }
+
+
+
+    return 0;
+}
