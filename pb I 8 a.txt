@@ -1,0 +1,5 @@
+a) 
+	if ((age <= 17) & (movieLength <= 90))
+    		printf("DISCOUNT APPLIES");
+	else
+    		printf("NO DISCOUNT");

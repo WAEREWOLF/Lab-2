@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstring>
+#include <fstream>
+
+char nume[100];
+int i;
+using namespace std;
+
+int main()
+{
+    cout<<"Introduceti echipa de fotbal: ";
+    cin>>nume;
+    cin.get(nume,100);
+    for(i=0;i<=strlen(nume);i++)
+        if(nume[i]>='a'&&nume[i]<='z')
+             nume[i]=nume[i]-32;
+     //cout<<nume<<endl;
+    //for(i=0;i<=strlen(nume);i++)
+    if(nume[i] == 'PIRATES')
+            cout<<"Home run!";
+        else
+
+
+         if(nume[i]=='STEELERS')
+                    cout<<"Touchdown!";
+               else
+                  {
+
+                   if(nume[i]=='PENGUINS')
+                     cout<<"Goal!";
+                else cout<<"You lose!";}
+        //}
+
+    return 0;
+}
